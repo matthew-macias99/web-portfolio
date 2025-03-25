@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', event => {
             const img = new Image();
             img.src = url;
         });
+        console.log("Image loaded!");
     }
 
     preloadImages("/assets/img//background-img.jpg");
