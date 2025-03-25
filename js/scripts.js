@@ -9,6 +9,16 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+    //background image preload fix maybe
+    function preloadImages(...imageUrl){
+        imageUrl.forEach((url) => {
+            const img = new Image();
+            img.src = url;
+        });
+    }
+
+    preloadImages("/assets/img//background-img.jpg");
+
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
